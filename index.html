@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập vòng lặp 2</title>
+</head>
+<body>
+<!--Bài 1-->
+<!--<script>-->
+<!--    let a = ""-->
+<!--    for (i=5; i>0;i&#45;&#45;){-->
+<!--        let j=i-->
+<!--        for (j ; j<6 ; j++) {-->
+<!--            a += "* "-->
+<!--        }-->
+<!--        a += "<br>"-->
+<!--    }-->
+<!--    document.write(a)-->
+
+<!--</script>-->
+
+<!--Bài 2-->
+<!--<script>-->
+<!--    let a =""-->
+<!--    for (i=5; i>0 ; i&#45;&#45;){-->
+<!--        let j = i-->
+<!--        for (j ; j>0 ; j&#45;&#45;){-->
+<!--            a += "* "-->
+<!--        }-->
+<!--        a += "<br>"-->
+<!--    }-->
+<!--    document.write(a)-->
+<!--</script>-->
+
+
+
+<!--Bài 3-->
+<!--<script>-->
+<!--            let a = "<p style=\"position: absolute; right: 900px\">"-->
+<!--            for (i=5; i>0;i&#45;&#45;){-->
+<!--                    let j=i-->
+<!--                    for (j ; j<6 ; j++) {-->
+<!--                        a += "* "-->
+<!--                    }-->
+<!--                a += "</p> <br> <p style=\"position: absolute; right: 900px\">"-->
+<!--                }-->
+<!--            document.write(a)-->
+
+
+<!--</script>-->
+
+<!--Bài 4-->
+<!--<script>-->
+<!--    let a ="<p style=\"position: absolute; right: 900px\">"-->
+<!--    for (i=5; i>0 ; i&#45;&#45;){-->
+<!--        let j = i-->
+<!--        for (j ; j>0 ; j&#45;&#45;){-->
+<!--            a += "* "-->
+<!--        }-->
+<!--        a += "</p> <br> <p style=\"position: absolute;right: 900px\">"-->
+<!--    }-->
+<!--    document.write(a)-->
+<!--</script>-->
+
+<!--Bài 5-->
+<script>
+    let sout;
+    sout = "<table width='300'>"
+    for (i = 1; i <= 10; i++) {
+        sout = sout + "<tr>";
+        if (i == 1 || i==10){
+
+
+        for (j = 2; j <= 15; j++) {
+            sout = sout + "<td> * </td>";}
+        sout += "</tr>"
+        }else {
+            sout = sout + "<td> * </td>";
+            for (j=2; j<=13; j++){
+                sout = sout + "<td>  </td>";
+            }
+            sout += "<td> * </td>";
+
+        }
+        sout += "</tr>";
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
+</body>
+</html>
